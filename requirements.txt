@@ -16,9 +16,10 @@ mccabe==0.6.1
 oauthlib==3.0.1
 pep8==1.7.1
 Pillow==7.1.0
-psycopg2-binary
+psycopg2-binary==2.8.6
 pycodestyle==2.5.0
 pylint==2.2.2
+python-dotenv==0.20.0
 python3-openid==3.1.0
 pytz==2018.9
 requests==2.21.0
