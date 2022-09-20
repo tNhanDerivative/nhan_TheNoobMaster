@@ -42,4 +42,7 @@ def email_list_signup(request):
             else:
                 subscribe(form.instance.email)
                 form.save()
-    return HttpResponseRedirect(request.META.get('HTTP_REFERER'))
+                messages.info(request, "You had just subscribed to nhan-theNoobMaster")
+                
+    return HttpResponseRedirect('/#newsletter')                
+    # return HttpResponseRedirect(request.META.get('HTTP_REFERER'))

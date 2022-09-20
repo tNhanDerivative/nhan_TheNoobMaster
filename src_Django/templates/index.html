@@ -104,7 +104,7 @@
     <section class="newsletter no-padding-top">    
       <div class="container">
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-6"><a name="newsletter"></a>
             <h2>Subscribe to Newsletter</h2>
             <p class="text-big">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           </div>
@@ -117,10 +117,19 @@
                     <button type="submit" class="submit">Signup</button>
                 </div>
               </form>
+              
+              {% if messages %}
+              <ul class="messages">
+                  {% for message in messages %}
+                  <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+                  {% endfor %}
+              </ul>
+              {% endif %}
             </div>
           </div>
         </div>
       </div>
+    
     </section>
     <!-- Gallery Section-->
     <section class="gallery no-padding">    
